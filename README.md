@@ -298,9 +298,9 @@ for i in range(user_end_index + 1, len(token_ids)):
     token_str = tokenizer.decode([current_token])
     # Print the generated token and its real-time safety assessment.
     if result['risk_level'][-1] == "Safe":
-        print(f"Token: '{token_str}' -> [Risk: {result['risk_level'][-1]}]")
+        print(f"Token: {repr(token_str)} -> [Risk: {result['risk_level'][-1]}]")
     else:
-        print(f"Token: '{token_str}' -> [Risk: {result['risk_level'][-1]} - Category: {result['category'][-1]}]")
+        print(f"Token: {repr(token_str)} -> [Risk: {result['risk_level'][-1]} - Category: {result['category'][-1]}]")
 
 ```
 
