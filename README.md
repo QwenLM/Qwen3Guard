@@ -302,6 +302,7 @@ for i in range(user_end_index + 1, len(token_ids)):
     else:
         print(f"Token: {repr(token_str)} -> [Risk: {result['risk_level'][-1]} - Category: {result['category'][-1]}]")
 
+model.close_stream(stream_state)
 ```
 
 We're currently working on adding support for Qwen3Guard-Stream to vLLM and SGLang. Stay tuned!
