@@ -68,7 +68,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 def extract_label_and_categories(content):
     safe_pattern = r"Safety: (Safe|Unsafe|Controversial)"
-    category_pattern = r"(Violent|Non-violent Illegal Acts|Sexual Content or Sexual Acts|Suicide & Self-Harm|Unethical Acts|Politically Sensitive Topics|Copyright Violation|Jailbreak|None)"
+    category_pattern = r"(Violent|Non-violent Illegal Acts|Sexual Content or Sexual Acts|PII|Suicide & Self-Harm|Unethical Acts|Politically Sensitive Topics|Copyright Violation|Jailbreak|None)"
     safe_label_match = re.search(safe_pattern, content)
     label = safe_label_match.group(1) if safe_label_match else None
     categories = re.findall(category_pattern, content)
@@ -120,7 +120,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 def extract_label_categories_refusal(content):
     safe_pattern = r"Safety: (Safe|Unsafe|Controversial)"
-    category_pattern = r"(Violent|Non-violent Illegal Acts|Sexual Content or Sexual Acts|Suicide & Self-Harm|Unethical Acts|Politically Sensitive Topics|Copyright Violation|None)"
+    category_pattern = r"(Violent|Non-violent Illegal Acts|Sexual Content or Sexual Acts|PII|Suicide & Self-Harm|Unethical Acts|Politically Sensitive Topics|Copyright Violation|None)"
     refusal_pattern = r"Refusal: (Yes|No)"
     safe_label_match = re.search(safe_pattern, content)
     refusal_label_match = re.search(refusal_pattern, content)
