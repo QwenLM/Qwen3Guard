@@ -223,7 +223,7 @@ print(chat_completion.choices[0].message.content)
 
 A typical workflow proceeds as follows:
 
-**(1) Prompt-Level Safety Check**： The user’s input prompt is simultaneously sented to both the LLM assistant and Qwen3Guard-Stream. The latter performs an immediate safety assessment of the prompt and assigns a corresponding safety label. Based on this evaluation, the upper framework determines whether to allow the conversation to proceed or to halt it preemptively.
+**(1) Prompt-Level Safety Check**： The user’s input prompt is simultaneously sent to both the LLM assistant and Qwen3Guard-Stream. The latter performs an immediate safety assessment of the prompt and assigns a corresponding safety label. Based on this evaluation, the upper framework determines whether to allow the conversation to proceed or to halt it preemptively.
 
 **(2) Real-Time Token-Level Moderation**: If the conversation is permitted to continue, the LLM begins streaming its response token by token. Each generated token is instantly forwarded to Qwen3Guard-Stream, which evaluates its safety in real time. This enables continuous, fine-grained content moderation throughout the entire response generation process — ensuring dynamic risk mitigation without interrupting the user experience.
 
