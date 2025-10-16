@@ -317,7 +317,7 @@ We're currently working on adding support for Qwen3Guard-Stream to vLLM and SGLa
 
 # Evaluation
 
-Please see []
+Please see [here](https://github.com/QwenLM/Qwen3Guard/tree/main/eval)
 
 ## Safety Policy
 
