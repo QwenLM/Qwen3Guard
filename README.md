@@ -350,7 +350,7 @@ If you find our work helpful, feel free to give us a cite.
       title={Qwen3Guard Technical Report}, 
       author={Qwen Team},
       year={2025},
-      url={https://github.com/QwenLM/Qwen3Guard/blob/main/Qwen3Guard_Technical_Report.pdf},
+      url={http://arxiv.org/abs/2510.14276},
 }
 ```
 
