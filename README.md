@@ -346,11 +346,11 @@ In the current version of Qwen3Guard, we consider the following safety categorie
 If you find our work helpful, feel free to give us a cite.
 
 ```bibtex
-@misc{qwen3guard,
-      title={Qwen3Guard Technical Report}, 
-      author={Qwen Team},
-      year={2025},
-      url={http://arxiv.org/abs/2510.14276},
+@article{zhao2025qwen3guard,
+  title={Qwen3Guard Technical Report},
+  author={Zhao, Haiquan and Yuan, Chenhan and Huang, Fei and Hu, Xiaomeng and Zhang, Yichang and Yang, An and Yu, Bowen and Liu, Dayiheng and Zhou, Jingren and Lin, Junyang and others},
+  journal={arXiv preprint arXiv:2510.14276},
+  year={2025}
 }
 ```
 
