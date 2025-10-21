@@ -177,7 +177,7 @@ class SafetyEvaluator:
                         predictions_strict.append(prediction)
                         predictions_loose.append(prediction)
                 else: # prompt
-                    prediction = self.label_map[pred_data[-1]]
+                    prediction = pred_data[-1]
                     if "Controversial" == prediction:
                         predictions_strict.append("Unsafe")
                         predictions_loose.append("Safe")
